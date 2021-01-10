@@ -26,7 +26,8 @@ Each individual folder has instructions for that particular lab. For example, se
 * Dependencies installation: See [requirements.txt](requirements.txt)
 	```
 	pip3 install -r requirements.txt (Python 3)
-	```  
+	```
+* [Psql Guide](http://postgresguide.com/utilities/psql.html)
 * [PostgreSQL Cheat Sheet](docs/PostgreSQL-Cheat-Sheet.pdf)
 
 
