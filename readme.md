@@ -23,6 +23,5 @@ Each individual folder has instructions for that particular lab. For example, se
 
 ## Attribution
 
-The following have _greatly_ contributed to the content in these labs:
-
-* Richard Quintin: rquintin@vt.edu
+Some lab content has adopted form the previous CS4604 labs created by Richard Quintin: rquintin@vt.edu 
+This Spring 2021 class adds Jupter Notebooks for some labs. 
