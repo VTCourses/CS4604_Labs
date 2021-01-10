@@ -14,6 +14,12 @@ SQLite is an in-process library that implements a self-contained, serverless, ze
 Each individual folder has instructions for that particular lab. For example, see [0.test-setup](0.test-setup)
 * [0.test-setup](0.test-setup/)
 
+## SQLite
+* Installation: https://www.sqlite.org/download.html
+* [SQLite In 5 Minutes Or Less](https://www.sqlite.org/quickstart.html)
+* [Command Line Shell For SQLite](https://sqlite.org/cli.html#:~:text=Terminate%20the%20sqlite3%20program%20by,a%20long%2Drunning%20SQL%20statement.)
+* [SQLite cheat sheet](docs/sql-sqlite-commands-cheat-sheet.pdf)
+
 ## Jupter Notebooks
 * Python 3 installation: [Python Tutorial](https://github.com/VTCourses/Python_tutorial)
 * [Anaconda Individual Edition](https://www.anaconda.com/products/individual): It is optional but strongly recommended. It would make your life easier.
@@ -21,12 +27,8 @@ Each individual folder has instructions for that particular lab. For example, se
 	```
 	pip3 install -r requirements.txt (Python 3)
 	```  
+* [PostgreSQL Cheat Sheet](docs/PostgreSQL-Cheat-Sheet.pdf)
 
-
-
-## Reference
-* [Command Line Shell For SQLite](https://sqlite.org/cli.html#:~:text=Terminate%20the%20sqlite3%20program%20by,a%20long%2Drunning%20SQL%20statement.)
-* [SQLite cheat sheet](sql-sqlite-commands-cheat-sheet.pdf)
 
 ## Attribution
 
