@@ -15,14 +15,10 @@ Each individual folder has instructions for that particular lab. For example, se
 * [0.test-setup](0.test-setup/)
 
 ## Jupter Notebooks
-* Python installation: [Python Tutorial](https://github.com/VTCourses/Python_tutorial)
+* Python 3 installation: [Python Tutorial](https://github.com/VTCourses/Python_tutorial)
 * [Anaconda Individual Edition](https://www.anaconda.com/products/individual): It is optional but strongly recommended. It would make your life easier.
 * Dependencies installation: See [requirements.txt](requirements.txt)
 	```
-	pip install -r requirements.txt (Python 2)
-
-	or
-	
 	pip3 install -r requirements.txt (Python 3)
 	```  
 
