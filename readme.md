@@ -25,4 +25,4 @@ Each individual folder has instructions for that particular lab. For example, se
 
 The content from some labs has adopted form the previous CS4604 labs created by Richard Quintin: rquintin@vt.edu 
 
-This Spring 2021 class adds Jupter Notebooks for some labs.
+This Spring 2021 class adds Jupter Notebooks for some labs and new labs.
