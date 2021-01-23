@@ -16,6 +16,7 @@ Each individual folder has instructions for that particular lab. For example, se
 
 ## SQLite
 * Installation: https://www.sqlite.org/download.html
+* SQLite is also available in ap1.cs.vt.edu
 * [SQLite In 5 Minutes Or Less](https://www.sqlite.org/quickstart.html)
 * [Command Line Shell For SQLite](https://sqlite.org/cli.html#:~:text=Terminate%20the%20sqlite3%20program%20by,a%20long%2Drunning%20SQL%20statement.)
 * [SQLite cheat sheet](docs/sql-sqlite-commands-cheat-sheet.pdf)
