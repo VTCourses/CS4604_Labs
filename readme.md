@@ -13,6 +13,7 @@ MariaDB is a community-developed, commercially supported fork of the MySQL relat
 
 Each individual folder has instructions for that particular lab. For example, see [0.test-setup](0.test-setup)
 * [0.test-setup](0.test-setup/)
+* [1.ddl_dml](1.ddl_dml/)
 
 ## SQLite
 * Installation: https://www.sqlite.org/download.html
