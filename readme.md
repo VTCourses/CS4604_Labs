@@ -37,6 +37,9 @@ Each individual folder has instructions for that particular lab. For example, se
 	pip3 install -r requirements.txt (Python 3)
 	```
 
+## Database client
+* [pgAdmin](https://www.pgadmin.org/)
+
 ## Online Database for practice
 * [Pdbmbook Playgrounds](https://www.pdbmbook.com/playground/)
 * [MySQL online](https://extendsclass.com/mysql-online.html#)
