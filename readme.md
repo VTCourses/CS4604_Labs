@@ -15,6 +15,7 @@ Each individual folder has instructions for that particular lab. For example, se
 * [0.test-setup](0.test-setup/)
 * [1.ddl_dml](1.ddl_dml/)
 * [2.select](2.select/)   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VTCourses/CS4604_Labs/blob/master/2.select/Lab_2.ipynb)
+* [3.more_queries](3.more_queries/)   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VTCourses/CS4604_Labs/blob/master/3.more_queries/Lab_3.ipynb)
 
 ## SQLite
 * Installation: https://www.sqlite.org/download.html
