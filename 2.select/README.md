@@ -32,15 +32,14 @@ SELECT * FROM table_name;
 ```
 
 The following SQL statement selects the "type" and "name" columns from the "basic_cards" table.
-**Try executing this query in your docker playground.**
+**Try this query:**
 
 ```sql
 SELECT type, name FROM basic_cards;
 ```
 
 The following SQL statement selects all the columns from the "basic_cards" table.
-**Try executing this query in your docker playground.**
-
+**Try this query:**
 
 ```sql
 SELECT * FROM basic_cards;
