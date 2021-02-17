@@ -99,10 +99,14 @@ For example, try this:
 ```sql
 SELECT name, type, MAX(cost) FROM basic_cards GROUP BY type;
 ```
-
-You should have gotten an error stating: [Need Check]
+Although running the above query in SQLite is working fine but the result is not correct due to "name" is missing in the GROUP BY clause. In most relation database you should receive an error stating:
 
 `ERROR:  column "basic_cards.name" must appear in the GROUP BY clause or be used in an aggregate function`
+
+The correct SQL query should be 
+```sql
+SELECT name, type, MAX(cost) FROM basic_cards GROUP BY name, type;
+```
 
 ### HAVING
 
