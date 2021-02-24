@@ -43,6 +43,7 @@ Each individual folder has instructions for that particular lab. For example, se
 
 ## Database client
 * [pgAdmin](https://www.pgadmin.org/)
+	* [How to connect to a database](pgadmin.md)
 
 ## Online Database for practice
 * [Pdbmbook Playgrounds](https://www.pdbmbook.com/playground/)
