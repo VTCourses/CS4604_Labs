@@ -44,6 +44,7 @@ Each individual folder has instructions for that particular lab. For example, se
 ## Database client
 * [pgAdmin](https://www.pgadmin.org/)
 	* [How to connect to a database](pgadmin.md)
+* [How to install psql on Mac, Ubuntu, Debian, Windows](https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/)
 
 ## Online Database for practice
 * [Pdbmbook Playgrounds](https://www.pdbmbook.com/playground/)
