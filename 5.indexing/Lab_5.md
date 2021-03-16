@@ -58,7 +58,9 @@ sqlite> EXPLAIN QUERY PLAN SELECT count(*) FROM big_cards;
 Record output below:
 
 ```
-
+QUERY PLAN
+`--SCAN TABLE big_cards
+Run Time: real 0.000 user 0.000000 sys 0.000092
 ```
 
 #### Using Indexes to improve performance
@@ -74,7 +76,8 @@ You suspect an index will help, but before you make any changes you want to get 
 Record output below:
 
 ```
-
+`--SCAN TABLE big_cards
+Run Time: real 0.000 user 0.000044 sys 0.000012
 ```
 
 You suspect that an index on the race column will help. Let's create it.
@@ -86,7 +89,10 @@ You suspect that an index on the race column will help. Let's create it.
 Record output below:
 
 ```
-
+Run Time: real 2.082 user 1.652299 sys 0.343631
+QUERY PLAN
+`--SEARCH TABLE big_cards USING INDEX IDX1_big_cards (race=?)
+Run Time: real 0.000 user 0.000095 sys 0.000024
 ```
 
 Would it be possible to satisfy the query with an index only and further speed up the query?
@@ -98,7 +104,10 @@ Would it be possible to satisfy the query with an index only and further speed u
 Record output below:
 
 ```
-
+Run Time: real 4.313 user 3.277909 sys 0.487418
+QUERY PLAN
+`--SEARCH TABLE big_cards USING COVERING INDEX IDX2_big_cards (race=?)
+Run Time: real 0.000 user 0.000000 sys 0.000108
 ```
 
 If you issue command `VACUUM big_cards;` and re-analyze you will likely see an explain plan that *is* satisfied by the index (and consequently much faster). However, subsequent updates to the table would cause this query to go back to the table to check the visibility map.
@@ -110,7 +119,10 @@ If you issue command `VACUUM big_cards;` and re-analyze you will likely see an e
 Record output below:
 
 ```
-
+Run Time: real 7.037 user 2.405474 sys 3.130201
+QUERY PLAN
+`--SEARCH TABLE big_cards USING COVERING INDEX IDX2_big_cards (race=?)
+Run Time: real 0.031 user 0.000000 sys 0.029581
 ```
 
 #### The performance cost of Indexes 
@@ -126,7 +138,9 @@ Note the Execution time.
 Record output below:
 
 ```
-
+QUERY PLAN
+`--SCAN TABLE big_cards
+Run Time: real 0.000 user 0.000000 sys 0.000066
 ```
 
 
@@ -141,20 +155,24 @@ Now let's drop the indexes and try again:
 Record output below:
 
 ```
-
+Run Time: real 0.381 user 0.055738 sys 0.130780
+Run Time: real 1.384 user 0.208304 sys 0.386505
+QUERY PLAN
+`--SCAN TABLE big_cards
+Run Time: real 0.000 user 0.000067 sys 0.000032
 ```
 
 Does the update took less time without the indexes? 
 Your answer:
 ```
-
+Indexes make the real time and user time lower but the system time is higher. Overall removing the indexes increases the the time.
 ```
 
 Describe your findings of this Lab 5 from the recorded outputs, is everything working fine? or is anything not working? etc. Please indicate your SQLite version:
 
 ```
-SQLite version: 
-Findings:
+SQLite version: 3.26.0
+Findings: From lab 5, I can see that indexing decreases the overall speed of query. Everything seems to be working fine and I have recieved no errors.
 
 
 ```
